@@ -50,12 +50,8 @@ Every file serves the one outcome above. There is no shared utility module and n
 
 ## Run it
 
-```bash
-python -m pytest intent_keys
-```
-
-The intent key is the only test file. If your pytest does not collect the intent-key filename, pass the file
-directly:
+The intent key is the only test file. Pass it directly, because the intent-key filename carries the full
+purpose grammar rather than pytest's default `test_` prefix:
 
 ```bash
 python -m pytest intent_keys/decide_test_and_guard_facts_without_a_model__mira_intent_os__when_a_rebase_reads_test_files__v001__20261110__lc_outcome_package__active.py
